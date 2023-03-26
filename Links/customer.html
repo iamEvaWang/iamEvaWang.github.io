@@ -1,0 +1,141 @@
+<!--
+  o Name: Eva Wang
+  o Date: Febuary 02, 2023
+  o Section: CST 8285 section 301 
+  o Lab: lab 2
+  o File: customer.html
+  o Lab objective: Create a webpage about Customer Registration
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CST8285 Web Programming Lab 2</title>
+    <meta charset="UTF-8">
+    <meta name=" description " content=" CST8285 Lab 2 " >
+    <meta name=" keywords " content=" htmlcode, Customer Registration" >
+    <meta name=" author " content=" Eva Wang " >
+    <style>
+
+      .iii {
+        margin-top: 5px;
+      }
+
+      .firstn, .lastn, .pwd, .pwdr, .cit, .sta, .zip, .pho, .cou, .bir, .fav {
+        display: inline-block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form>
+        <fieldset>
+          <h1> Customer Registration </h1>
+          <fieldset>
+              <legend>1. User Info</legend>        
+                  <div class="firstn">
+                    <label for="fn">First Name  </label><br>
+                    <input type="text" id="fn" name="firstname" maxlength="10"> &nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+
+                  <div class="lastn">
+                    <label for="ln">  Last Name </label><br>
+                    <input type="text" id="ln" name="lastname" value="Wang" readonly >
+                  </div>
+
+                  <div class="email">
+                    <label for="em">Email</label><br>
+                    <input type="email" id="em" name="email" style="width:400px" placeholder="wang0900@algonquin.com" >
+                  </div>
+
+                  <div class="pwd">
+                    <label for="pw">Passward </label><br > 
+                    <input type="password" name="secret" id="pw" placeholder="at least 8 characters"> &nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+
+                  <div class="pwdr">
+                    <label for="pw1">Passward Repeat</label><br > 
+                    <input type="password" name="secret" id="pw1" placeholder="at least 8 characters">
+                  </div>
+          </fieldset>
+          <br>
+
+          <fieldset>
+              <legend>2. Location</legend>
+                  <div class="add">
+                    <label for="add">Address</label><br>
+                    <input type="text" id="add" name="address" style="width: 400px;" >
+                  </div>
+
+                  <div class="cit">
+                    <label for="cit">City</label><br>
+                    <input type="text" id="cit" name="city" style="width: 100px;" > &nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+
+                  <div class="sta">
+                    <label for="sta">State</label><br>
+                    <input type="text" id="sta" name="state" style="width: 100px;" > &nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+
+                  <div class="zip">
+                    <label for="zip">Zip</label><br>
+                    <input type="text" id="zip" name="zip" style="width: 100px;" >
+                  </div>
+                  <br>
+                  <div class="pho">
+                    <label for="pho">Phone</label><br>
+                    <input type="text" id="pho" name="phone" placeholder="NNN-NNN-NNNN" required > &nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+
+                  <div class="cou">
+                    <label for="cou">Country</label><br>
+                    <select id="cou" name="counrty" size="1">
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                      <option value="china">China</option>
+                    </select>
+                  </div>
+                  <br>
+                  <span>Continent</span><br>
+                  <input type="radio" id="na" name="northamerica" value="northamerica" >
+                  <label for="na">North America</label><br>
+          
+                  <input type="radio" id="eu" name="europe" value="europe" >
+                  <label for="eu">Europe</label><br>
+          
+                  <input type="radio" id="sa" name="sorthamerica" value="sorthamerica" >
+                  <label for="sa">Sorth America</label><br>
+          </fieldset>
+          <fieldset>
+              <legend>3.Personal Details</legend>
+                  <div class="bir" >
+                    <label for="bd">Birth Day</label><br>
+                    <input type="date" id="bd" name="birthday">  &nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+
+                  <div class="fav">
+                    <label for="col">Favorite Color</label><br>
+                    <input type="color" id="col" name="color">
+                  </div>
+                  <br>
+                  <div class="iii">
+                    <label for="iia" >Interest In Art </label><br>
+                    <span >Minimal </span>
+                    <input type="range" id="iia" name="interestinart">
+                    <span >Love it! </span>
+                  </div>
+          </fieldset>
+
+          <h2>4.ALL Done</h2>
+          <input type="checkbox" id="ite" name="agreeiterm" required>
+          <label for="ite">I agree to the</label>
+          <a href="">Terms of the Site</a><br>
+
+          <button type="button">Submit</button>
+          <button type="Reset">Reset</button>
+
+          <footer>2023 Copyright</footer>
+      </fieldset>
+    </form>
+  </body>
+</html>

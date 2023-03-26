@@ -1,52 +1,90 @@
 <!--
   o Name: Eva Wang
-  o Date: January 23, 2023
+  o Date: February 26, 2023
   o Section: CST 8285 section 301 
-  o Lab: lab 1
-  o File: hometown.html
-  o Lab objective: Building a webpage about your hometown from scratch 
+  o Lab: Assignment 1
+  o File: index.html
+  o Lab objective: Building a personal Web page that containning your resume and courses information page.
 -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>CST8285 Web Programming Lab 1</title>
-    <meta charset="UTF-8">
-    <meta name=" description " content=" CST8285 Lab 1 " >
-    <meta name=" keywords " content=" Lab 1,CST8285,htmlcode" >
-    <meta name=" author " content=" Eva Wang " >
-  </head>
-  <body>
-    <h1> Welcome to Jixi </h1>
-    <br>
-    <img src="Jixi.jpg" alt="My Hometown Jixi City picture" width="800" height="400" >
-    <br>
-    <h2> City Information </h2>
-      <ul>
-        <li> Country: China </li>
-        <li> Province: Heilongjiang </li>
-        <li> Population: <b>1,502,060</b> </li>
-        <li> Area: <b>22,500</b> square kilometers </li>
-      </ul>
-    <p> Jixi is a prefecture-level city under the jurisdiction of Heilongjiang Province, 
-      one of the national important energy bases and regional center cities in southeastern Heilongjiang Province, 
-      as determined by the State Council.It is located in northeast China, southeast of Heilongjiang, 
-      and is bordered by the Ussuri River and the Song-Archa River in the east and southeast, 
-      across the water from Russia.</p>
-    <p> Jixi also known as <b>Coal City</b>. </p>
-      <h2> Major Tourist Attractions </h2>
-        <ol>
-        <li> Tiexi Forest Park </li>
-        <li> Dangbi Town Tourist Area </li>
-        <li> Xingkai Lake </li>
-      </ol>
-    <h4>Latest Update: <br>
-      <a href="https://outlook.office.com/mail/">wang0900@algonquinlive.com</a>
-    </h4>
-    <br>
-    <footer>
-      <P>Eva Wang - 041059417.<br>
-         Jan 23, 2023</P>
-    </footer>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name=" description " content=" Introduction page " >
+        <meta name=" author " content=" Eva Wang " >
+        <title>Eva Wang Home Page</title>
+        <link rel="stylesheet" type="text/css" href="Assignment1.css" >
+    </head>
+    <body>
+        <header id="hea">
+            <h1 id="title">Welcome to My Website</h1>
+            <nav>
+                <a class="nav" href="index.html">Home Page</a>
+                <a class="nav" href="resume.html">My Resume</a>
+                <a class="nav" href="courses.html">Courses Introduction</a>
+            </nav>
+        </header>
+
+        <div>    
+            <img class="myphoto" src="Pictures/myphoto.JPG" alt="My Photo" >
+        </div>                                                                                    
+        <br>
+        <div>   
+            <h1 id="introductionpage">Eva Wang Introduction Page</h1> 
+            <fieldset>
+                <h2>Description of Myself</h2>
+                <p>
+                    I am studying for the 2-year Computer Programming Diploma at Algonquin College.I hope to be a software 
+                    developer in the near future. Furthermore, I work <strong>conscientiously and responsibly</strong>, have a <strong>strong ability 
+                    to learn and adapt</strong>, and am a <strong>self-motivated and results-driven</strong> person.
+                </p>
+            </fieldset>
+            <fieldset>
+                <h2>Hobbies</h2>
+                <p> In my free time, I enjoy various outdoor sports, such as swimming, camping and skiing with my family 
+                    and friends.
+                </p>
+            </fieldset>
+            <fieldset>
+                <h2>Activities</h2>
+                <ul>
+                    <li><h3>Development</h3>
+                    <p>Think about who you are and list what kind of person you want to be and what you want to do in your future life. 
+                        Meanwhile, you can writing a letter to your futher self. 
+                    </p></li>
+                
+                    <li><h3>Art Exhibitions</h3>
+                    <p>Seeing art exhibitions is one of my favorite leisure activities, allowing you to enhance your sense of beauty
+                        while gaining a sense of well-being.
+                    </p></li>
+                    
+                    <li><h3>Relaxation and Learning</h3>
+                    <p>One of my favourite ways to relax and learn is by listening to audio like News and TED application in my phone.</p>
+                    </li>   
+                </ul>
+            </fieldset>
+            <fieldset>             
+                <h2>Algonquin College Introduction</h2>
+                    
+                    <p>Algonquin College of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario,
+                    Canada. The college has three campuses, all in Ontario: a primary campus located in Ottawa, and secondary campuses located
+                    in Perth and Pembroke. The college offers bachelor's degrees, diplomas, and certificates in a range of disciplines and 
+                    specialties. It has been ranked among the Top 50 Research Colleges in Canada and has been recognized as one of Canada's 
+                    top innovation leaders. The enabling legislation is the Ministry of Training, Colleges and Universities Act. It is a 
+                    member of Polytechnics Canada. <a href="https://www.algonquincollege.com/"> Welcom to Visit Algonquin College Website </a></p>
+                
+                
+            </fieldset> 
+        </div> 
+   
+
+        <footer>
+            <nav >
+                <a  id="returntop" href="#hea">Retrun to Top</a>
+            </nav>
+            <p id="author">Eva Wang <br> @ 2023.02</p>
+        </footer>
+
+    </body>
 </html>
